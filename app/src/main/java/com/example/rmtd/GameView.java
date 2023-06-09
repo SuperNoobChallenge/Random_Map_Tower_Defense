@@ -176,13 +176,13 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                             Tower newtempTower = new Tower(idx[0] * box_size + box_size, idx[1] * box_size + box_size, 100);
                             map[idx[1]][idx[0]].tower = newtempTower;
                             towers.add(newtempTower);
-                            insertPressed = false;
+//                            insertPressed = false;
                         }
                         if (upgradePressed && map[idx[1]][idx[0]].type == TowerType.SINGLE_TOWER && coin >= 200) {
                             coin-=200;
                             map[idx[1]][idx[0]].tower.upRange(50);
                             map[idx[1]][idx[0]].tower.Damage += 5;
-                            upgradePressed = false;
+//                            upgradePressed = false;
                         }
                     }
                     //손가락으로 화면을 누르기 시작했을 때 할 일

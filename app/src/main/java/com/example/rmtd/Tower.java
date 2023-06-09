@@ -46,7 +46,19 @@ public class Tower {
             while (count<enemies.size()){
                 try {
                     tempEnemy = enemies.get(count);
-                    if(range>(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
+                    if(range/5 >(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
+                        tempEnemy.pt.setColor(Color.rgb(255,0,0));
+                        target = tempEnemy;
+                    } else if(range/4 >(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
+                        tempEnemy.pt.setColor(Color.rgb(255,0,0));
+                        target = tempEnemy;
+                    } else if(range/3 >(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
+                        tempEnemy.pt.setColor(Color.rgb(255,0,0));
+                        target = tempEnemy;
+                    } else if(range/2 >(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
+                        tempEnemy.pt.setColor(Color.rgb(255,0,0));
+                        target = tempEnemy;
+                    } else if(range>(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
                         tempEnemy.pt.setColor(Color.rgb(255,0,0));
                         target = tempEnemy;
                     }
