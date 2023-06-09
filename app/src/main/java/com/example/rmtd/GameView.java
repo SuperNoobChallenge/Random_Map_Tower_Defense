@@ -159,7 +159,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 
     int tempx = 0, tempy = 0;
 
-    //터치 이벤트
+    //터치 이벤트 dd
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         if (insertPressed || upgradePressed) {
