@@ -180,7 +180,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                         }
                         if (upgradePressed && map[idx[1]][idx[0]].type == TowerType.SINGLE_TOWER && coin >= 200) {
                             coin-=200;
-                            map[idx[1]][idx[0]].tower.upRange(50);
+                            map[idx[1]][idx[0]].tower.upRange(10);
                             map[idx[1]][idx[0]].tower.Damage += 5;
 //                            upgradePressed = false;
                         }
@@ -354,7 +354,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                     count++;
                 }
                 if (ColonyCnt <= (int) score / 400) {
-                    ColonyCnt++;
+                    ColonyCnt+=1;
                     Xpad = box_size * 8;
                     Ypad = box_pad * 8;
                     sx = mx - (Xpad);
