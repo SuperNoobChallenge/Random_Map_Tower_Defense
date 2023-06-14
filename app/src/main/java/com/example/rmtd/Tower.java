@@ -46,21 +46,12 @@ public class Tower {
             while (count<enemies.size()){
                 try {
                     tempEnemy = enemies.get(count);
-                    if(range/5 >(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
-                        tempEnemy.pt.setColor(Color.rgb(255,0,0));
-                        target = tempEnemy;
-                    } else if(range/4 >(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
-                        tempEnemy.pt.setColor(Color.rgb(255,0,0));
-                        target = tempEnemy;
-                    } else if(range/3 >(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
-                        tempEnemy.pt.setColor(Color.rgb(255,0,0));
-                        target = tempEnemy;
-                    } else if(range/2 >(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
-                        tempEnemy.pt.setColor(Color.rgb(255,0,0));
-                        target = tempEnemy;
-                    } else if(range>(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
-                        tempEnemy.pt.setColor(Color.rgb(255,0,0));
-                        target = tempEnemy;
+                    for(int i=10;i>0 ;i--){
+                        if(range/i >(Math.pow(x-tempEnemy.x,2)+Math.pow(y- tempEnemy.y,2))){
+                            tempEnemy.pt.setColor(Color.rgb(255,0,0));
+                            target = tempEnemy;
+                            break;
+                        }
                     }
                     count++;
                 }catch (Exception e){

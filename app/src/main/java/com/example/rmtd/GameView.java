@@ -490,7 +490,14 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 //                        }
                     }
                     if(MainActivity.mylife <= 0){
-                        c.drawText("게임오버이고 나중에 뭐 추가할듯?",100,100,temp_pt);
+                        Paint endpt = new Paint();
+                        endpt.setColor(Color.BLACK);
+                        c.drawRect(0,(my/2)-500,mx,(my/2)+500,endpt);
+                        temp_pt.setTextSize(200);
+                        temp_pt.setTextAlign( Paint.Align.CENTER );
+                        c.drawText("게임오버!",(mx/2),(my/2)-100,temp_pt);
+                        temp_pt.setTextSize(100);
+                        c.drawText(String.format("점수 : %d", score),(mx/2),(my/2)+100,temp_pt);
                         thread.SetRunning(false);
                         spawnThread.SetRunning(false);
                         towerSearch.SetRunning(false);

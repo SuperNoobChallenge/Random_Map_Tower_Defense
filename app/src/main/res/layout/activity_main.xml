@@ -32,13 +32,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:gravity="center"
-                android:text="Time : 0"
-                android:id="@+id/timeText"/>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Time : 0"-->
+<!--                android:id="@+id/timeText"/>-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="설치"
+            android:text="설치(100 Coin)"
             android:layout_weight="1"
             android:layout_margin="7dp"
             android:id="@+id/insertTower"
@@ -68,7 +68,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="업글"
+            android:text="강화 (200 Coin)"
             android:layout_weight="1"
             android:layout_margin="7dp"
             android:id="@+id/upTower"
